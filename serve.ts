@@ -70,7 +70,7 @@ export async function createServer(
       } else {
         template = indexProd;
         // @ts-ignore
-        render = (await import("./dist/server/main-server.tsx")).render;
+        render = (await import("./dist/server/main-server.js")).render;
       }
 
       const context = {};
